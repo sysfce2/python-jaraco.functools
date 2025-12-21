@@ -297,6 +297,8 @@ def passthrough(func: Callable[..., object]) -> Callable[[_T], _T]:
     """
     Wrap the function to always return the first parameter.
 
+    Useful for wrapping functions called for their side effects.
+
     >>> passthrough(print)('3')
     3
     '3'
