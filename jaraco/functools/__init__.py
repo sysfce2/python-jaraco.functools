@@ -8,7 +8,8 @@ import operator
 import time
 import types
 import warnings
-from typing import Callable, TypeVar
+from collections.abc import Callable
+from typing import TypeVar
 
 import more_itertools
 
